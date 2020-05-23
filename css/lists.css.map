@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,EAAE,CAAC,EAAE;AACL,EAAE,CAAC,EAAE,CAAC;EACJ,eAAe,EAAE,WAAW;CAC7B;;AAED,AAAA,EAAE,CAAC,EAAE,CAAC,EAAE;AACR,EAAE,CAAC,EAAE,CAAC,EAAE;AACR,EAAE,CAAC,EAAE,CAAC,EAAE;AACR,EAAE,CAAC,EAAE,CAAC,EAAE,CAAC;EACP,eAAe,EAAE,WAAW;CAC7B",
-    "sources": [
-        "../classless/lists.scss"
-    ],
-    "names": [],
-    "file": "lists.css"
-}

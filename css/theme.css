@@ -1,0 +1,30 @@
+@import "https://unpkg.com/sanitize.css";
+@import "https://unpkg.com/sanitize.css/forms.css";
+@import "https://unpkg.com/sanitize.css/typography.css";
+body {
+  background-color: #ffff00;
+}
+
+h1 {
+  font-size: calc(1rem * 2.00);
+}
+
+h2 {
+  font-size: calc(1rem * 1.50);
+}
+
+h3 {
+  font-size: calc(1rem * 1.17);
+}
+
+h4 {
+  font-size: calc(1rem * 1.00);
+}
+
+h5 {
+  font-size: calc(1rem * 0.83);
+}
+
+h6 {
+  font-size: calc(1rem * 0.67);
+}
