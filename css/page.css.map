@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECHT,OAAO;CDIjB",
+    "sources": [
+        "../classless/page.scss",
+        "../theme-variables.scss"
+    ],
+    "names": [],
+    "file": "page.css"
+}

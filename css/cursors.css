@@ -1,0 +1,29 @@
+button,
+summary,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[type="color"],
+[type="file"],
+[type="range"],
+label > [type="checkbox"]:not(:disabled),
+label > [type="radio"]:not(:disabled) {
+  cursor: pointer;
+}
+
+[readonly] {
+  cursor: default;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+:disabled,
+[type="checkbox"][id]:disabled + label[for],
+[type="radio"][id]:disabled + label[for] {
+  cursor: not-allowed;
+}
+
+/* stylelint-enable */
+abbr {
+  cursor: help;
+}
+/*# sourceMappingURL=cursors.css.map */

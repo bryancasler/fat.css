@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../classless/tables.scss"
+    ],
+    "names": [],
+    "file": "tables.css"
+}
