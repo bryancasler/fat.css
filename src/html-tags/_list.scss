@@ -1,0 +1,33 @@
+// ################################
+// List Variables
+// ################################
+
+
+
+// ################################
+// List Styles
+// ################################
+
+// <dd> Specifies a definition for a term in a definition list.
+// <dir> Obsolete Defines a directory list.
+// <dl> Defines a definition list.
+// <dt> Defines a term (an item) in a definition list.
+// <li> Defines a list item.
+// <ol> Defines an ordered list.
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ol ol ol,
+ol ul ol,
+ul ol ol,
+ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+// <menu> Represents a list of commands.
+// <ul> Defines an unordered list.
+
+
+

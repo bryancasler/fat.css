@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto !important;
+}
+
+h1[id]{
+    color: hsla(219, 79%, 26%, 1);
+}
+
+h1[id]:after{
+    content: '';
+    z-index: -1;
+    height: 0.5rem;
+    border-radius: 25px;
+    width: 100%;
+    display: block;
+    background-color: hsla(219, 79%, 66%, 1);
+}
+
+code:not([class]){
+    border: 1px dashed gray;
+}
+
+pre code:not([class]){
+    border: none;
+}

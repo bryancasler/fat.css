@@ -1,0 +1,45 @@
+// ################################
+// Table Variables
+// ################################
+
+$spacing-x: .75rem;
+$spacing-y: .50rem;
+$border-color: hsla(0, 0%, 87%, 1.0) !default;
+$border-width: 2px;
+
+// ################################
+// Table Styles
+// ################################
+
+// <caption> Defines the title of a table.
+// <col> Defines attribute values for one or more columns in a table.
+// <colgroup> Specifies attributes for multiple columns in a table.
+// <table> Defines a data table.
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: calc(#{$spacing-x} * 2.00);
+}
+
+// <tbody> Groups a set of rows defining the main body of the table data.
+// <td> Defines a cell in a table.
+td {
+  padding: $spacing-y $spacing-x;
+  border-bottom: $border-width solid $border-color;
+}
+
+// <tfoot> Groups a set of rows summarizing the columns of the table.
+// <thead> Groups a set of rows that describes the column labels of a table.
+// <th> Defines a header cell in a table.
+th {
+  padding: $spacing-y $spacing-x;
+  text-align: left;
+  border-bottom: $border-width solid $border-color;
+}
+
+// <tr> Defines a row of cells in a table.
+
+
+
+
+  

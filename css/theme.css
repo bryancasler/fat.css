@@ -1,30 +1,303 @@
+@charset "UTF-8";
 @import "https://unpkg.com/sanitize.css";
 @import "https://unpkg.com/sanitize.css/forms.css";
 @import "https://unpkg.com/sanitize.css/typography.css";
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+  text-decoration-skip-ink: none;
+  text-decoration-skip: none;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 1rem;
+  line-height: inherit;
+}
+
+b {
+  font-weight: inherit;
+}
+
+b {
+  font-weight: 700;
+  font-weight: 600;
+}
+
+blockquote {
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-style: italic;
+}
+
+blockquote:last-child {
+  margin-bottom: 0;
+}
+
+code {
+  font-family: Menlo, Consolas, DejaVu Sans Mono, monospace;
+  font-size: 90%;
+  color: #404040;
+  background-color: #f2f2f2;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.4rem;
+}
+
+pre code {
+  white-space: pre;
+  padding: 0;
+  display: block;
+}
+
+dfn {
+  font-style: italic;
+}
+
+ins {
+  background-color: #fffadb;
+  color: #000000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #fff2a8;
+  color: #000000;
+  font-weight: 700;
+  font-weight: 600;
+}
+
+pre {
+  max-height: none;
+  overflow-y: auto;
+  font-family: Menlo, Consolas, DejaVu Sans Mono, monospace;
+  color: #404040;
+  background-color: #f2f2f2;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  word-wrap: break-word;
+  white-space: pre;
+  hyphens: none;
+  -ms-overflow-style: auto;
+  display: block;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -4px;
+  bottom: -0.4rem;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -8px;
+  top: -0.8rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type=button] {
+  cursor: pointer;
+}
+
+label > input[type=checkbox]:not(:disabled) {
+  cursor: pointer;
+}
+
+input[type=color] {
+  cursor: pointer;
+}
+
+input[type=file] {
+  cursor: pointer;
+}
+
+label > input[type=radio]:not(:disabled) {
+  cursor: pointer;
+}
+
+input[type=range] {
+  cursor: pointer;
+}
+
+input[type=reset] {
+  cursor: pointer;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* stylelint-disable selector-no-qualifying-type */
+input[type=checkbox][id]:disabled + label[for],
+input[type=radio][id]:disabled + label[for] {
+  cursor: not-allowed;
+}
+
+/* stylelint-enable */
+select:not([size]):not([multiple]) {
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:not([size]):not([multiple]) {
+  background: #ffffff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.85rem center/8px 10px;
+  padding-right: 2.7rem;
+}
+
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  select {
+    padding-right: 1rem;
+    background-image: none;
+    background-repeat: repeat;
+  }
+}
+/* Change background color of the selected option */
+select[multiple] option:hover,
+select[multiple] option:focus,
+select[multiple] option:active,
+select[multiple] option:checked {
+  background: linear-gradient(#FFC894, #FFC894);
+  background-color: #FFC894 !important;
+  /* for IE */
+}
+
+:disabled {
+  cursor: not-allowed;
+}
+
+[readonly] {
+  cursor: default;
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ol ol ol,
+ol ul ol,
+ul ol ol,
+ul ul ol {
+  list-style-type: lower-alpha;
+}
+
 body {
-  background-color: #ffff00;
+  background-color: #ffffff;
+}
+
+/* Suppress the focus outline on elements that cannot be accessed via keyboard this prevents an unwanted focus outline from appearing around elements that might still respond to pointer events. source: https://github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss */
+[tabindex="-1"]:focus {
+  outline: none !important;
 }
 
 h1 {
-  font-size: calc(1rem * 2.00);
+  font-size: calc(1rem * 2.00 * 1.50);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: clamp(calc(1rem / 2.5), calc((1rem * 2.00 * 1.5) * (1 / 2)), calc((1rem * 2.00 * 1.50) * (1 / 2)));
 }
 
 h2 {
-  font-size: calc(1rem * 1.50);
+  font-size: calc(1rem * 1.50 * 1.50);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: clamp(calc(1rem / 2.5), calc((1rem * 1.50 * 1.50) * (1 / 2)), calc((1rem * 1.50 * 1.50) * (1 / 2)));
 }
 
 h3 {
-  font-size: calc(1rem * 1.17);
+  font-size: calc(1rem * 1.17 * 1.50);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: clamp(calc(1rem / 2.5), calc((1rem * 1.17 * 1.50) * (1 / 2)), calc((1rem * 1.17 * 1.50) * (1 / 2)));
 }
 
 h4 {
-  font-size: calc(1rem * 1.00);
+  font-size: calc(1rem * 1.00 * 1.50);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: clamp(calc(1rem / 2.5), calc((1rem * 1.00 * 1.50) * (1 / 2)), calc((1rem * 1.00 * 1.50) * (1 / 2)));
 }
 
 h5 {
-  font-size: calc(1rem * 0.83);
+  font-size: calc(1rem * 0.83 * 1.50);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: clamp(calc(1rem / 2.5), calc((1rem * 0.83 * 1.50) * (1 / 2)), calc((1rem * 0.83 * 1.50) * (1 / 2)));
 }
 
 h6 {
-  font-size: calc(1rem * 0.67);
+  font-size: calc(1rem * 0.67 * 1.50);
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: clamp(calc(1rem / 2.5), calc((1rem * 0.67) * (1 / 2)), calc((1rem * 0.67) * (1 / 2)));
+}
+
+hr {
+  box-sizing: content-box;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid gray;
+  margin: 1rem 0;
+  padding: 0;
+  overflow: visible;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-rendering: optimizeLegibility;
+  backface-visibility: hidden;
+}
+
+p:only-child {
+  margin-bottom: 0;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: calc(0.75rem * 2.00);
+}
+
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 2px solid #dedede;
+}
+
+th {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 2px solid #dedede;
 }

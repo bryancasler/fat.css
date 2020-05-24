@@ -1,0 +1,160 @@
+// ################################
+// Structural Variables
+// ################################
+
+$font-size: 1rem !default;
+$spacing-lg: 1rem !default;
+$gray: gray !default;
+
+// ################################
+// Structural Styles
+// ################################
+
+// <a> Defines a hyperlink.
+// TODO: Styles TBD
+
+// <article> Defines an article.
+// No styles needed.
+
+// <aside> Defines some content loosely related to the page content.
+// No styles needed.
+
+// <body> Defines the document's body.
+// No styles needed. Sanitizer will set body to margin to 0.
+
+// <br> Produces a single line break.
+// No styles needed.
+
+// <details> Represents a widget from which the user can obtain additional information or controls on-demand.
+// TODO: Styles TBD
+
+// <div> Specifies a division or a section in a document.
+// No styles needed.
+
+// <h1> Defines H1 heading.
+// @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+h1{
+    font-size: calc(#{$font-size} * 2.00 * 1.50);
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: clamp(calc(1rem / 2.5), calc((#{$font-size} * 2.00 * 1.5) * (1 / 2)), calc((#{$font-size} * 2.00 * 1.50) * (1 / 2)));
+}
+
+// <h2> Defines H2 heading.
+// @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+h2{
+    font-size: calc(#{$font-size} * 1.50 * 1.50);
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: clamp(calc(1rem / 2.5), calc((#{$font-size} * 1.50 * 1.50) * (1 / 2)), calc((#{$font-size} * 1.50 * 1.50) * (1 / 2)));
+}
+
+// <h3> Defines H3 heading.
+// @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+h3{
+    font-size: calc(#{$font-size} * 1.17 * 1.50);
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: clamp(calc(1rem / 2.5), calc((#{$font-size} * 1.17 * 1.50) * (1 / 2)), calc((#{$font-size} * 1.17 * 1.50) * (1 / 2)));
+}
+
+// <h4> Defines H4 heading.
+// @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+h4{
+    font-size: calc(#{$font-size} * 1.00 * 1.50);
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: clamp(calc(1rem / 2.5), calc((#{$font-size} * 1.00 * 1.50) * (1 / 2)), calc((#{$font-size} * 1.00 * 1.50) * (1 / 2)));
+}
+
+// <h5> Defines H5 heading.
+// @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+h5{
+    font-size: calc(#{$font-size} * 0.83 * 1.50);
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: clamp(calc(1rem / 2.5), calc((#{$font-size} * 0.83 * 1.50) * (1 / 2)), calc((#{$font-size} * 0.83 * 1.50) * (1 / 2)));
+}
+
+// <h6> Defines H6 heading.
+// @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+h6{
+    font-size: calc(#{$font-size} * 0.67 * 1.50);
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: clamp(calc(1rem / 2.5), calc((#{$font-size} * 0.67) * (1 / 2)), calc((#{$font-size} * 0.67) * (1 / 2)));
+
+}
+
+// <header> Represents the header of a document or a section.
+// No styles needed.
+
+// <hgroup> Defines a group of headings.
+// TODO: Styles TBD
+
+// <hr> Produce a horizontal line.
+hr{
+    box-sizing: content-box;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $gray;
+    margin: $spacing-lg 0;
+    padding: 0;
+    overflow: visible; // Show the overflow in Edge and IE
+}
+
+// <html> Defines the root of an HTML document.
+html{
+    // resize the base font-size and get an easy math for rem units
+    // https://snook.ca/archives/html_and_css/font-size-with-rem
+    // html{
+    //   font-size: 62.5%;
+    // }  
+
+    // ! this is not a standard feature, is webkit only
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color
+    // remove a tap background when a link or interactive element is focused
+    // if is touch      
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    // this enable font ligatures
+    text-rendering: optimizeLegibility;
+
+    // break very long texts by default, especially on old browsers
+    // e.g. big <h1> or <h2> headlines
+    // Already handled by Sanitize.css
+    // word-wrap: break-word;
+
+    // 3D effects are problematic in WebKit because
+    // backface-visibility not hidden, so we can add backface support
+    // to the body element
+    // http://css-tricks.com/almanac/properties/b/backface-visibility/
+
+    // this is a not standard CSS property, so it's for webkit only
+    // https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling
+    backface-visibility: hidden;    
+}
+
+// <footer> Represents the footer of a document or a section.
+// No styles needed.
+
+// <nav> Defines a section of navigation links.
+// No styles needed.
+
+// <p> Defines a paragraph.
+p:only-child{
+    margin-bottom:0;
+}
+
+// <section> Defines a section of a document, such as header, footer etc.
+// TODO: Styles TBD
+
+// <span> Defines an inline styleless section in a document.
+// No styles needed.
+
+// <summary> Defines a summary for the <details> element.
+summary{
+    display: list-item;
+    cursor: pointer;
+}

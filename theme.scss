@@ -1,4 +1,0 @@
-@use 'src/sanitize-styles';
-@use 'src/classless-styles' with(
-    $body-background-color: #ffff00
-);

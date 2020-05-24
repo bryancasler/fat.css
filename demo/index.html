@@ -7,22 +7,58 @@
     <link rel="shortcut icon"type="image/x-icon" href="data:image/x-icon;,">
     <title>Page.CSS HTML Example</title>
  
-    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="demo.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.20.0/prism.js"></script>
   </head>
 
   <body>
+
     <p>For easy spacing, Page.css removes top margins and applies a bottom margin to block elements. By default, text sizing and spacing is measured in rem units. Shoelace also sets box-sizing: border-box globally to make it easier to properly size elements.</p>
     
-    <h2 id="content">Content</h2>
+    <h1 id="content">Content</h1>
     <p>Shoelace provides default content styles that are easy to customize. You don’t need to apply any classes to achieve these styles — just use the appropriate tags.</p>
     <p>For easy spacing, Shoelace removes top margins and applies a bottom margin to block elements. By default, text sizing and spacing is measured in <code>rem</code> units. Shoelace also sets <code>box-sizing: border-box</code> globally to make it easier to properly size elements.</p>
-    <h2 id="headings-h1-h6">Headings <code>&lt;h1&gt; – &lt;h6&gt;</code></h2>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    
+    <h1 id="structural-tags">Structural Tags</h1>
+
+    <h1>Heading 1 <code>&lt;h1&gt;</code></h1>
+    <h2>Heading 2 <code>&lt;h2&gt;</code></h2>
+    <h3>Heading 3 <code>&lt;h3&gt;</code></h3>
+    <h4>Heading 4 <code>&lt;h4&gt;</code></h4>
+    <h5>Heading 5 <code>&lt;h5&gt;</code></h5>
+    <h6>Heading 6 <code>&lt;h6&gt;</code></h6>
+
+    <h2>Parapgraphs <code>&lt;p&gt;</code></h2>    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <h1>Heading 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h2>Heading 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h3>Heading 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h4>Heading 4</h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h5>Heading 5</h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <h6>Heading 6</h6><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    
+    <h2 id="form-tags">Form Tags</h2>
+    <p>TBD</p>    
+
+    <h2 id="formatting-tags">Formatting Tags</h2>
+    <p>TBD</p>
+    
+    <h2 id="list-tags">List Tags</h2>
+    <p>TBD</p>
+    
+    <h2 id="table-tags">Table Tags</h2>
+    <p>TBD</p>
+    
+    <h2 id="embedded-tags">Embedded Tags</h2>
+    <p>TBD</p>    
+
+
     
     <h2 id="paragraphs-p">Paragraphs <code>&lt;p&gt;</code></h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat excepturi repellendus nostrum dolorum dignissimos quis non, minus debitis laborum vero cupiditate sequi neque, magnam dolore nemo possimus, soluta ducimus eaque.</p>
@@ -75,8 +111,8 @@
     <h2 id="preformatted-text-pre">Preformatted Text <code>&lt;pre&gt;</code></h2>
     <pre><code>CLS
     SCREEN 13
-    PRINT "SHOELACE IS AWESOME"
-    </code></pre><h2 id="text-formats">Text Formats</h2>
+    PRINT "SHOELACE IS AWESOME"</code></pre>
+    <h2 id="text-formats">Text Formats</h2>
     <table class="table">
       <thead>
         <tr>
@@ -155,6 +191,43 @@
     <h2 id="forms">Forms</h2>
     <p>Form controls are styled at 100% of the width of their parent element.</p>
     <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Form Field Type</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>&lt;button type="button"&gt;Button&lt;/button&gt;</code></td>
+          <td><button type="button">Button</button></td>
+        </tr>  
+        <tr>
+          <td><code>&lt;select&gt;</code></td>
+          <td>
+            <select id="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </td>
+        </tr>  
+        <tr>
+          <td><code>&lt;select multiple&gt;</code></td>
+          <td>
+            <select id="cars" multiple>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+            </select>
+          </td>
+        </tr>  
+
+
+
+      </tbody>
         <thead>
           <tr>
             <th>Input Type</th>
@@ -162,6 +235,10 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td><code>&lt;input type="button"&gt;</code></td>
+            <td><input type="button" value="Button"></td>
+          </tr>         
           <tr>
             <td><code>&lt;input type="checkbox"&gt;</code></td>
             <td>
@@ -171,12 +248,20 @@
           </tr>
           <tr>
             <td><code>&lt;input type="color"&gt;</code></td>
-            <td><input type="color" value="#0099dd"></td>
+            <td><input type="color" value="#000000"></td>
           </tr>
           <tr>
             <td><code>&lt;input type="date"&gt;</code></td>
             <td><input type="date"></td>
           </tr>
+          <tr>
+            <td><code>&lt;input type="datetime"&gt;</code> <mark>Obsolete</mark></td>
+            <td><input type="datetime"></td>
+          </tr>       
+          <tr>
+            <td><code>&lt;input type="datetime-local"&gt;</code></td>
+            <td><input type="datetime-local"></td>
+          </tr>               
           <tr>
             <td><code>&lt;input type="email"&gt;</code></td>
             <td><input type="email"></td>
@@ -186,13 +271,30 @@
               <code>&lt;input type="file"&gt;</code>
               <br>
               <span class="text-small text-secondary">
-                File inputs aren’t supported. Use a <a href="file-buttons.html">file button</a> instead.
+                <!-- TODO: Revisit this -->
+                If you need to theme, use a <a href="https://www.shoelace.style/docs/file-buttons.html">file button</a> instead.
               </span>
+            </td>
+            <td>
+              <input type="file" accept="image/*, text/*">
             </td>
             <td>
               
             </td>
           </tr>
+          <tr>
+            <td><code>&lt;input type="hidden"&gt;</code></td>
+            <td><input type="hidden"></td>
+          </tr>    
+          <tr>
+            <td><code>&lt;input type="image"&gt;</code></td>
+            <!-- TODO: Can we get a better looking Data URI? Or should we use an actual image https://imgur.com/a/TeuFZoL? -->
+            <td><input type="image" alt="An 8-bit red heart" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAACcklEQVRYR+2YQW6bUBCGPy/cbEorQbtJVl1whpJDpKpiLyvVuQM5RXsH0lU2WKrsQ6Q9gyt1l1VtqUlWZeFqAs8iNvB4gBNoYWNZzPv5+BmGmTegY8egY7z0wPt+Yv+Ow2/BOwdf59gn+PwdvunikvPDEC51saInullxuQ6PYBRCqBMfw3gKU12cnH8B9m9Y6mJFT3RLAYuoBL6Hky9woRP/CJOvMH8G0S+4zYp/BdYfGL4G+wcsdJpzmH+AicTdwCodv+PwEpZ2Ar0JXCamuC6sHqzfhBS5Ik9KnpgOdPv8ClYOOObA63W8xnHaAyzOCtPGXcuCIIhBL5P3ZDaDKMo0KoLoNkkJ5coCFqJngTWEoanDEi8uy+8bcCU9NimxhsTGRNa2QaXCwKz6DYg/SJnpVYUaeAlONvDhIRwfw8EBnJ7G8uPMFzb30uoNDyAQdysyPliWDzwaQRjGuSo525KjB973g+gd7h3eciA/JTwPfB/u7mBy/zlvxZEP3Aq8XYjuA6u28mfy/W+L0eKssKg2s1x7+YT0qi9RCDvAAVxY8PwIjjzwnoL1Gq6v4Oq+jdmaPGqPSPu4IaMRSQGUnelaA5wG2emV90GZ6nmL5Et15p0DVgNkkw25clHGqjM4k/9TmAHZM1iyoJTDSrzJkUdpZk3GtVNCCaihUgbKuqOPOCuDqwC74JZ9LYwcbrKCmOwYpW/m/wCuU/JU11U2BbbjKjncaWBV8nzw83oP09LVWJUoEira8DMtXY8CLF3eOziRi6n9uaql61GA1UXSm9ZVS1cPrCtJaty6ibdfC3sDnVbjZc30gnXja9fhugCm6/8C5bj1La5BhpIAAAAASUVORK5CYII="></td>
+          </tr>            
+          <tr>
+            <td><code>&lt;input type="month"&gt;</code></td>
+            <td><input type="month"></td>
+          </tr>          
           <tr>
             <td><code>&lt;input type="number"&gt;</code></td>
             <td><input type="number"></td>
@@ -204,18 +306,30 @@
           <tr>
             <td><code>&lt;input type="radio"&gt;</code></td>
             <td>
-              <label><input type="Radio" name="radio" checked=""> Radio 1</label><br>
-              <label><input type="Radio" name="radio"> Radio 2</label>
+              <label><input type="radio" name="radio" checked=""> Radio 1</label><br>
+              <label><input type="radio" name="radio"> Radio 2</label>
             </td>
           </tr>
           <tr>
             <td><code>&lt;input type="range"&gt;</code></td>
-            <td><input type="range"></td>
+            <td><input type="range" min="0" max="25"></td>
           </tr>
+          <tr>
+            <td><code>&lt;input type="reset"&gt;</code></td>
+            <td><input type="reset"></td>
+          </tr>          
           <tr>
             <td><code>&lt;input type="search"&gt;</code></td>
             <td><input type="search"></td>
           </tr>
+          <tr>
+            <td><code>&lt;input type="submit"&gt;</code></td>
+            <td><input type="submit"></td>
+          </tr>     
+          <tr>
+            <td><code>&lt;input type="tel"&gt;</code></td>
+            <td><input type="tel"></td>
+          </tr>                  
           <tr>
             <td><code>&lt;input type="text"&gt;</code></td>
             <td><input type="text"></td>
@@ -224,6 +338,14 @@
             <td><code>&lt;input type="time"&gt;</code></td>
             <td><input type="time"></td>
           </tr>
+          <tr>
+            <td><code>&lt;input type="url"&gt;</code></td>
+            <td><input type="url"></td>
+          </tr>          
+          <tr>
+            <td><code>&lt;input type="week"&gt;</code></td>
+            <td><input type="week"></td>
+          </tr>          
           <tr>
             <td><code>&lt;select&gt;</code></td>
             <td>
@@ -241,5 +363,13 @@
         </tbody>
       </table>
     
+
+    <pre class="language-css"><code class=" language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+      <span class="token property">--body-color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+      <span class="token property">--body-bg-color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+      <span class="token property">--state-primary</span><span class="token punctuation">:</span> tomato<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    </code></pre>
+
   </body>
 </html>
