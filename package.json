@@ -1,4 +1,28 @@
 {
-    "name": "page.css",
-    "version": "1.0.0"
+  "name": "pagecss",
+  "version": "1.0.0",
+  "description": "Mostly classless and a few classed styles for page theming with cross-browser consistance.",
+  "author": "Bryan Casler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryancasler/page.css.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryancasler/page.css/issues"
+  },
+  "homepage": "https://github.com/bryancasler/page.css#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.1",
+    "webpack-dev-server": "^3.11.0"
+  }
 }

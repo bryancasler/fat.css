@@ -1,5 +1,5 @@
 @use '../src/sanitize/sanitize-combined';
 @use '../src/html-tags/html-tags-combined' with(
-    $misc-background-color: #ffffff,
+    $formatting-highlight: red,
 );
 @use '../src/helpers/helpers-combined';

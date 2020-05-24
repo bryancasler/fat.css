@@ -6,20 +6,36 @@ $bf-black: #000000;
 $bf-gray: #cccccc;
 $bf-blue: #0000ff;
 $bf-white: #ffffff;
-$bf-spacing-md-rem: 1.0rem;
-$bf-spacing-lg-rem: 1.5rem;
+$bf-spacing-md-rem: 1.0rem !default;
+$bf-spacing-lg-rem: 1.5rem !default;
 
 // ################################
 // Form Styles
 // ################################
+
 // <button> Creates a clickable button.
 button{
     cursor: pointer;
 }
+
 // <datalist> Represents a set of pre-defined options for an <input> element.
+// TODO
+
 // <fieldset> Specifies a set of related form fields.
+// TODO
+
 // <form> Defines an HTML form for user input.
+// TODO
+
 // <input> Defines an input control.
+input[readonly] {
+    cursor: default;
+}
+
+input:disabled{
+    cursor: not-allowed;
+}
+
 // <input type="button"> A push button with no default behavior displaying the value of the value attribute, empty by default.
 input[type="button"]{
     cursor: pointer;
@@ -161,11 +177,5 @@ select[multiple] option:checked
 }
 
 // <textarea> Defines a multi-line text input control (text area).
-// Miscellaneous Form Stylings
-:disabled{
-    cursor: not-allowed;
-}
+// TODO
 
-[readonly] {
-    cursor: default;
-}

@@ -2,10 +2,10 @@
 // Table Variables
 // ################################
 
-$spacing-x: .75rem;
-$spacing-y: .50rem;
+$spacing-x: .75rem !default;
+$spacing-y: .50rem !default;
 $border-color: hsla(0, 0%, 87%, 1.0) !default;
-$border-width: 2px;
+$border-width: 2px !default;
 
 // ################################
 // Table Styles
@@ -38,7 +38,7 @@ th {
 }
 
 // <tr> Defines a row of cells in a table.
-
+// TODO
 
 
 
