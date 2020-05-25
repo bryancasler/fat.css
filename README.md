@@ -1,4 +1,4 @@
-# page.css
+# page.scss
 Mostly classless and a few classed styles for page theming with cross-browser consistance.
 
 ## Structural Tags
@@ -150,6 +150,7 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * Look into: https://www.gridlover.net/try
 * Look into: https://type-scale.com/
 * The .h1 – .h6 font-size utilities can be used to override an element’s default size. https://basscss.com/
+* Would is be fun or annoying if page.scss become pages.css so that way it's always (pagescss)
 
 # Inspirartion and References
 * Normalize.css
@@ -161,6 +162,7 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * https://www.tutorialrepublic.com/html-reference/html5-tags.php
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 * http://wtfforms.com/
+* https://css.gg/
 
 # Potential Classed Extensions (not in here)
 * Animations - Consists of animations that will work with the controls.

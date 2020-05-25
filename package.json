@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bryancasler/page.css.git"
+    "url": "git+https://github.com/bryancasler/pagescss.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bryancasler/page.css/issues"
+    "url": "https://github.com/bryancasler/pagescss/issues"
   },
-  "homepage": "https://github.com/bryancasler/page.css#readme",
+  "homepage": "https://github.com/bryancasler/pagescss#readme",
   "devDependencies": {
     "autoprefixer": "^9.6.5",
     "@babel/core": "^7.6.4",
