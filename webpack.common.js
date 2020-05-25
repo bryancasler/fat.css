@@ -12,7 +12,7 @@ module.exports = {
       template: "./src/demo/pagecss.html",
       inject: true,
       minify: {
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: false
       }
     })
