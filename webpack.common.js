@@ -8,8 +8,8 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: "PageCSS Demo",
-      filename: "pagecss.html",
-      template: "./src/demo/pagecss.html",
+      filename: "index.html",
+      template: "./src/demo/index.html",
       inject: true,
       minify: {
         removeComments: false,
