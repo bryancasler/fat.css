@@ -9,7 +9,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "PageCSS Demo",
       filename: "pagecss.html",
-      template: "./pagecss.html",
+      template: "./src/demo/pagecss.html",
       inject: true,
       minify: {
         removeComments: true,
