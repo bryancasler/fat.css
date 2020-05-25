@@ -1,3 +1,5 @@
 @use "/sanitize/sanitize-combined";@use "/html-tags/html-tags-combined" with(
     $formatting-highlight: red,
 );@use "/helpers/helpers-combined";@use "/demo/styles"
+
+sacraficial-tag{color:#00f}body{width:100%;max-width:800px;margin:0 auto!important}h1[id]{color:#0e3377}h1[id]:after{content:"";z-index:-1;height:.5rem;border-radius:25px;width:100%;display:block;background-color:#6494ed}code:not([class]){border:1px dashed grey}pre code:not([class]){border:none}

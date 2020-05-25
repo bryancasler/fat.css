@@ -20,22 +20,33 @@ module.exports = merge(common, {
     new CleanWebpackPlugin()
   ],
   module: {
+    // rules: [
+    //   {
+    //     test: /\.scss$/,
+    //     use: [
+    //       MiniCssExtractPlugin.loader, // 4. Save css to files
+    //       "css-loader", // 3. From css to vanilla js
+    //       {
+    //         loader: "postcss-loader", // 2. Add Autoprefixer to CSS
+    //         options: {
+    //           ident: "postcss",
+    //           plugins: [require("autoprefixer")]
+    //         }
+    //       },
+    //       "sass-loader" // 1. From SASS to CSS
+    //     ]
+    //   }
+    // ]
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.s[ac]ss$/i,
         use: [
-          MiniCssExtractPlugin.loader, // 4. Save css to files
-          "css-loader", // 3. From css to vanilla js
-          {
-            loader: "postcss-loader", // 2. Add Autoprefixer to CSS
-            options: {
-              ident: "postcss",
-              plugins: [require("autoprefixer")]
-            }
-          },
-          "sass-loader" // 1. From SASS to CSS
-        ]
-      }
-    ]
+          'style-loader',               // 4. Creates `style` nodes from JS strings
+           MiniCssExtractPlugin.loader, // 3. Save CSS to files
+          'css-loader',                 // 2. Translates CSS into CommonJS (aka Vanilla JS)
+          'sass-loader',                // 1. Compiles Sass to CSS
+        ],
+      },
+    ],
   }
 });
