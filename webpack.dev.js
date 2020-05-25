@@ -15,13 +15,13 @@ module.exports = merge(common, {
         use: [
           "style-loader", //4. Inject CSS into DOM
           "css-loader", // 3. From css to vanilla js
-          {
-            loader: "postcss-loader", // 2. Add Autoprefixer to CSS
-            options: {
-              ident: "postcss",
-              plugins: [require("autoprefixer")]
-            }
-          },
+          // {
+          //   loader: "postcss-loader", // 2. Add Autoprefixer to CSS
+          //   options: {
+          //     ident: "postcss",
+          //     plugins: [require("autoprefixer")]
+          //   }
+          // },
           "sass-loader" //1. From SASS to CSS
         ]
       }
