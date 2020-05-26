@@ -1,6 +1,5 @@
-/* @TODO Curretnly our SASS parser isn't working well, cause the first tag to be invalid */
-sacraficial-tag{
-    color: blue;
+.random-content::after{
+    content: "" + random(1000) + "";
 }
 
 body{
