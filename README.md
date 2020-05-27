@@ -150,13 +150,16 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * Look into: https://www.gridlover.net/try
 * Look into: https://type-scale.com/
 * The .h1 – .h6 font-size utilities can be used to override an element’s default size. https://basscss.com/
-* Would is be fun or annoying if page.scss become pages.css so that way it's always (pagescss)
+* Would it be fun or annoying if page.scss become pages.css so that way it's always (pagescss)
+* We should add input[type="color"][list] support https://github.com/jensimmons/cssremedy/blob/master/process/UA_stylesheets/chrome.css
+* List of Chrome's default stylings https://github.com/jensimmons/cssremedy/blob/master/process/UA_stylesheets/chrome.css
 
 # Inspirartion and References
 * Normalize.css
 * Santizie.css
 * Shoelace.style
 * Holiday.css
+* https://github.com/ryanmorr/baseline.css
 * https://github.com/twbs/rfs#demos
 * https://html.com/attributes/
 * https://www.tutorialrepublic.com/html-reference/html5-tags.php
