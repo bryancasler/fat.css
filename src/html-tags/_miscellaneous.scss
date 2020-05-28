@@ -12,3 +12,20 @@
 [tabindex='-1']:focus {
     outline: none !important;
 }
+
+/**
+ * 1. Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none; // 1. normalize.css
+}
+
+
+/**
+ * 1. Add the correct display in IE 10+.
+ */
+
+template {
+    display: none; // 1. normalize.css
+}

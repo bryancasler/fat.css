@@ -22,8 +22,15 @@ h1[id]:after{
     background-color: hsla(219, 79%, 66%, 1);
 }
 
-code:not([class]){
+tr td:first-child code:not([class]){
     border: 1px dashed gray;
+}
+
+tr td:first-child mark{
+    margin-left: 0.5rem;
+    background-color: yellow;
+    padding: 0.2rem 0.25rem;
+    vertical-align: middle;
 }
 
 pre code:not([class]){

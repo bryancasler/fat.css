@@ -12,17 +12,15 @@ $black: #000000 !default;
 // ################################
 
 // <abbr> Defines an abbreviated form of a longer word or phrase.
-    // Abbreviations (taken from Bootstrap 4)
-    // 1. Remove the bottom border in Firefox 39-.
+    // 1. Remove the bottom border in Firefox 39-, Chrome 57-.
     // 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
     // 3. Add explicit cursor to indicate changed behavior.
 abbr[title],
 abbr[data-original-title] {
-  cursor: help;
-  text-decoration: underline; // 2
-  text-decoration: underline dotted; // 2
-  cursor: help; // 2
-  border-bottom: 0; // 2
+  text-decoration: underline; // 2 - Bootstrap 4
+  text-decoration: underline dotted; // 2 - Bootstrap 4
+  cursor: help; // 3 - Bootstrap 4
+  border-bottom: none; // 1 - Bootstrap 4
   text-decoration-skip-ink: none;
   text-decoration-skip: none;
 }
@@ -40,11 +38,10 @@ address{
 // <b> Displays text in a bold style.
     // Prevent the duplicate application of `bolder` by the next rule in Safari 6
     // Then add the correct font weight in Chrome, Edge, and Safari
+    // 1. Add the correct font weight in Chrome, Edge, and Safari.
 b{
-    font-weight: inherit;
-}
-
-b{
+    // font-weight: inherit;
+    font-weight: bolder; // 1. normalize.css
     font-weight: 700; // fallback for font families without 600 */
     font-weight: 600;
 }
@@ -75,9 +72,14 @@ blockquote:last-child{
 // TODO
 
 // <code> Specifies text as computer code.
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 code {
-    font-family: Menlo,Consolas,DejaVu Sans Mono,monospace;
-    font-size: 90%;
+    font-family: monospace, monospace; /* 1 - normalize.css*/
+    font-size: calc(1rem * 0.9); // Set it slightly smalelr than the baseline font
+    line-height: calc((1rem * 2) * 0.9); // This is such a hot mess
     color: hsla(0, 0%, 25%, 1);
     background-color: hsla(0, 0%, 95%, 1);
     border-radius: .25rem;
@@ -115,7 +117,14 @@ ins {
 }
 
 // <kbd> Specifies text as keyboard input.
-// Handled by Sanitize > typography.scss
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+kbd{
+    font-family: monospace, monospace; /* 1 - normalize.css*/
+    font-size: 1rem; /* 2 - normalize.css */
+}
 
 // <mark> Represents text highlighted for reference purposes.
 mark {
@@ -129,10 +138,16 @@ mark {
 // TODO
 
 // <pre> Defines a block of preformatted text.
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
 pre {
     max-height: none;
     overflow-y: auto;
     font-family: Menlo,Consolas,DejaVu Sans Mono,monospace;
+    // font-family: monospace, monospace; /* 1 - nomralize.css */
+    // font-size: 1em; /* 2 - normalize */
     color: hsla(0, 0%, 25%, 1);
     background-color: hsla(0, 0%, 95%, 1);
     border-radius: .25rem;
@@ -180,36 +195,62 @@ q {
 // Handled by Sanitize.css
 
 // <samp> Specifies text as sample output from a computer program.
-// Handled by Sanitize.css> Typograhy.css
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+ samp{
+    font-family: monospace, monospace; /* 1 - normalize.css*/
+    font-size: 1rem; /* 2 - normalize.css */
+}
 
 // <small> Displays text in a smaller size.
-small{
-    font-size: 80%;
+/**
+ * 1. Add the correct font size in all browsers.
+ */
+
+ small {
+    font-size: 80%; // 1. nomralize.css
 }
 
 // <strike> Obsolete Displays text in strikethrough style.
 // TODO
 
+
 // <strong> Indicate strongly emphasized text.
-// Handled by Sanitize.css
+// Prevent the duplicate application of `bolder` by the next rule in Safari 6
+// Then add the correct font weight in Chrome, Edge, and Safari
+// 1. Add the correct font weight in Chrome, Edge, and Safari.
+strong{
+    // font-weight: inherit;
+    font-weight: bolder; // 1. normalize.css
+    font-weight: 700; // fallback for font families without 600 */
+    font-weight: 600;
+}
 
 // <sub> Defines subscripted text.
+/**
+ * 1. Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 sub{ 
     font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    bottom: -4px;
+    line-height: 0; /* 1. - normalize.css */
+    position: relative; /* 1. - normalize.css */
+    vertical-align: baseline; /* 1. - normalize.css */
     bottom: -0.4rem;
 }
 
 // <sup> Defines superscripted text.
+/**
+ * 1. Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
 sup{
     font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -8px;
+    line-height: 0; /* 1. - normalize.css */
+    position: relative; /* 1. - normalize.css */
+    vertical-align: baseline; /* 1. - normalize.css */
     top: -0.8rem;
 }
 

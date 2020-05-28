@@ -1,3 +1,21 @@
+## Features
+
+Compiling elements of [normalize.css](https://github.com/necolas/normalize.css), [sanitize.css](https://github.com/csstools/sanitize.css), [Bootstrap](https://github.com/twbs/bootstrap), [ress](https://github.com/filipelinhares/ress), [CSS Remedy](https://github.com/mozdevs/cssremedy), and others with my own personal preferences while only supporting the latest browsers. Some of the features include:
+
+* Most of the normalizations from normalize.cs
+* Most of the opinionated normalizations from sanitize.css (Form, Typography ...)
+* Resets the box model to `border-box`.
+* Removes the margin and padding of all elements.
+* Sets the background of all elements to transparent and prevents background repeating.
+* Render text with grayscale antialiasing on high DPI screens.
+* Headings and typography are optimized for `rem` units.
+* Images and other media elements are responsive by default.
+* Removes the default styling for buttons and select elements.
+* Removes click delay on clickable elements on mobile devices.
+* Future-proof rule to remove focus outlines for mouse/pointer based interactions.
+* Accessibility helpers.
+* Styles optimized for printing.
+
 # page.scss
 Mostly classless and a few classed styles for page theming with cross-browser consistance.
 

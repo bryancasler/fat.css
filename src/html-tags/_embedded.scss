@@ -39,7 +39,15 @@
 // TODO
 
 // <img> Displays an inline image.
-// TODO
+/**
+ * 1. Remove the border on images inside links in IE 10.
+ * 2. Prevent the space that can appear under the image. https://stackoverflow.com/questions/31444891/mystery-white-space-underneath-image-tag/31445364#31445364
+ */
+
+img {
+    border-style: none; // 1. - normalize.css
+    vertical-align: bottom // 2. - We made this
+}
 
 // <map> Defines a client-side image-map.
 // No styling needed.

@@ -1,0 +1,38 @@
+.random-content::after {
+  content: "824";
+}
+
+body {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+h1[id] {
+  color: #0e3377;
+}
+
+h1[id]:after {
+  content: "";
+  z-index: -1;
+  height: 0.5rem;
+  border-radius: 25px;
+  width: 100%;
+  display: block;
+  background-color: #6494ed;
+}
+
+tr td:first-child code:not([class]) {
+  border: 1px dashed gray;
+}
+
+tr td:first-child mark {
+  margin-left: 0.5rem;
+  background-color: yellow;
+  padding: 0.2rem 0.25rem;
+  vertical-align: middle;
+}
+
+pre code:not([class]) {
+  border: none;
+}

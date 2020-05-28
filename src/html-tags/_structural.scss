@@ -11,7 +11,13 @@ $gray: gray !default;
 // ################################
 
 // <a> Defines a hyperlink.
-// TODO
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent; /* 1. - normalize.css */
+}
 
 // <article> Defines an article.
 // No styles needed.
@@ -20,19 +26,35 @@ $gray: gray !default;
 // No styles needed.
 
 // <body> Defines the document's body.
-// No styles needed. Sanitizer will set body to margin to 0.
+/**
+  * 1. Remove the margin in all browsers.
+  */
+body{
+    margin: 0; /* 1 - normalize.css */
+}
 
 // <br> Produces a single line break.
 // No styles needed.
 
 // <details> Represents a widget from which the user can obtain additional information or controls on-demand.
-// TODO
+/*
+ * 1. Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details{
+    display: block; // 1. normalize.css
+}
 
 // <div> Specifies a division or a section in a document.
 // No styles needed.
 
 // <h1> Defines H1 heading.
 // @TODO Despite their font-weights being set to 700 by the browsers native styles, if I don't sent their font-weight here then they come out looking uneven. https://d.pr/i/BsZkAy
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ *   font-size: 2em;
+ *   margin: 0.67em 0;
+ */
 h1{
     font-size: calc(#{$font-size} * 2.00 * 1.50);
     font-weight: normal;
@@ -93,19 +115,33 @@ h6{
 // TODO
 
 // <hr> Produce a horizontal line.
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
 hr{
-    box-sizing: content-box;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid $gray;
-    margin: $spacing-lg 0;
-    padding: 0;
-    overflow: visible; // Show the overflow in Edge and IE
+    box-sizing: content-box; /* 1 - normalize.css*/
+    height: 0; /* 1 - normalize.css */
+    overflow: visible; /* 2 - normalize.css */
+
+    // display: block;
+    // height: 1px;
+    // border: 0;
+    // border-top: 1px solid $gray;
+    // margin: $spacing-lg 0;
+    // padding: 0;
+  
 }
 
 // <html> Defines the root of an HTML document.
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 html{
+    line-height: 1.15; /* 1 - normalize.css */
+    -webkit-text-size-adjust: 100%; /* 2 - normalize.css*/
+
     // resize the base font-size and get an easy math for rem units
     // https://snook.ca/archives/html_and_css/font-size-with-rem
     // html{
@@ -139,12 +175,21 @@ html{
 // <footer> Represents the footer of a document or a section.
 // No styles needed.
 
+// <main>
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+    display: block;
+}
+
 // <nav> Defines a section of navigation links.
 // No styles needed.
 
 // <p> Defines a paragraph.
 p:only-child{
-    margin-bottom:0;
+    margin-top:0; //  We made this
+    margin-bottom:0; //  We made this
 }
 
 // <section> Defines a section of a document, such as header, footer etc.
@@ -154,7 +199,10 @@ p:only-child{
 // No styles needed.
 
 // <summary> Defines a summary for the <details> element.
+/*
+ * 1. Add the correct display in all browsers.
+ */
 summary{
-    display: list-item;
+    display: list-item; // 1. - normalize.css
     cursor: pointer;
 }
