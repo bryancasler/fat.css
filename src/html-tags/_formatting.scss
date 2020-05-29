@@ -175,6 +175,14 @@ pre {
 } 
 
 // <progress> Represents the completion progress of a task.
+/**
+ * 1. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+ progress {
+    vertical-align: baseline; // 1. - normalize.css
+  }
+
 // TODO
 
 // <q> Defines a short inline quotation.

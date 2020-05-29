@@ -184,6 +184,7 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
 * http://wtfforms.com/
 * https://css.gg/
+* http://jkorpela.fi/www/testel.html
 
 # Potential Classed Extensions (not in here)
 * Animations - Consists of animations that will work with the controls.

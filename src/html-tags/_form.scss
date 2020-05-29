@@ -14,20 +14,66 @@ $bf-spacing-lg-rem: 1.5rem !default;
 // ################################
 
 // <button> Creates a clickable button.
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ * 3. Show the overflow in Edge.
+ * 4. Remove the inheritance of text transform in Firefox.
+ * 5. Correct the inability to style clickable types in iOS and Safari.
+ */
+
 button{
     cursor: pointer;
+    font-family: inherit; /* 1 - nomralize.css*/
+    font-size: 100%; /* 1 - nomralize.css*/
+    line-height: 1.15; /* 1 - nomralize.css*/
+    margin: 0; /* 2 - nomralize.css*/
+    overflow: visible; /* 3 - nomralize.css*/
+    text-transform: none; /* 4 - nomralize.css*/
+    -webkit-appearance: button; /* 5 - normalize.css*/
+}
+
+/**
+ * 1. Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner{
+    border-style: none; /* 1. normalize.css */
+    padding: 0; /* 1. normalize.css */
+}
+
+/**
+ * 1. Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring{
+    outline: 1px dotted ButtonText; /* 1. - normalize.css */
 }
 
 // <datalist> Represents a set of pre-defined options for an <input> element.
 // TODO
 
 // <fieldset> Specifies a set of related form fields.
-// TODO
+// 1. Correct the padding in Firefox.
+fieldset {
+    padding: 0.35em 0.75em 0.625em; /* 1. - normalize.css */
+  }
 
 // <form> Defines an HTML form for user input.
 // TODO
 
 // <input> Defines an input control.
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ * 3. Show the overflow in Edge.
+ */
+input{
+    font-family: inherit; /* 1 - nomralize.css*/
+    font-size: 100%; /* 1 - nomralize.css*/
+    line-height: 1.15; /* 1 - nomralize.css*/
+    margin: 0; /* 2 - nomralize.css*/   
+    overflow: visible; /* 3 - nomralize.css*/   
+}
+
 input[readonly] {
     cursor: default;
 }
@@ -37,10 +83,37 @@ input:disabled{
 }
 
 // <input type="button"> A push button with no default behavior displaying the value of the value attribute, empty by default.
+// 1. Correct the inability to style clickable types in iOS and Safari.
 input[type="button"]{
     cursor: pointer;
+    -webkit-appearance: button; /* 1. - normalize.css */
 }
+
+/**
+ * 1. Remove the inner border and padding in Firefox.
+ */
+ input[type="button"]::-moz-focus-inner{
+    border-style: none; /* 1. normalize.css */
+    padding: 0; /* 1. normalize.css */
+}
+
+/**
+ * 1. Restore the focus styles unset by the previous rule.
+ */
+ input[type="button"]:-moz-focusring{
+    outline: 1px dotted ButtonText; /* 1. - normalize.css */
+}
+
 // <input type="checkbox"> A check box allowing single values to be selected/deselected.
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+input[type="checkbox"]{
+    box-sizing: border-box; /* 1 - normalize.css */
+    padding: 0; /* 2 - normalize.css */
+}
+
 label > input[type="checkbox"]:not(:disabled){
     cursor: pointer;
 }
@@ -60,8 +133,32 @@ input[type="file"]{
 // <input type="image"> A graphical submit button. Displays an image defined by the src attribute. The alt attribute displays if the image src is missing.
 // <input type="month"> A control for entering a month and year, with no time zone.
 // <input type="number"> A control for entering a number. Displays a spinner and adds default validation when supported. Displays a numeric keypad in some devices with dynamic keypads.
+/**
+ * 1. Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+ input[type="number"]::-webkit-inner-spin-button{
+    height: auto; /* 1 - normalize.css */
+  }
+ 
+/**
+ * 1. Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+ input[type="number"]::-webkit-outer-spin-button {
+   height: auto; /* 1 - normalize.css */
+ }
+
+
 // <input type="password"> A single-line text field whose value is obscured. Will alert user if site is not secure.
 // <input type="radio"> A radio button, allowing a single value to be selected out of multiple choices with the same name value.
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+ input[type="checkbox"]{
+    box-sizing: border-box; /* 1 - normalize.css */
+    padding: 0; /* 2 - normalize.css */
+}
+
 label > input[type="radio"]:not(:disabled) {
     cursor: pointer;
     
@@ -73,14 +170,65 @@ input[type="range"]{
 }
 
 // <input type="reset"> A button that resets the contents of the form to default values. Not recommended.
+// 1. Correct the inability to style clickable types in iOS and Safari.
 input[type="reset"]{
-    cursor: pointer;
+    cursor: pointer; /* 1. - normalize.css */
+    -webkit-appearance: button; /* 1. - normalize.css */
+}
+
+/**
+ * 1. Remove the inner border and padding in Firefox.
+ */
+ input[type="reset"]::-moz-focus-inner{
+    border-style: none; /* 1. normalize.css */
+    padding: 0; /* 1. normalize.css */
+}
+
+/**
+ * 1. Restore the focus styles unset by the previous rule.
+ */
+ input[type="reset"]:-moz-focusring{
+    outline: 1px dotted ButtonText; /* 1. - normalize.css */
 }
 
 // <input type="search"> A single-line text field for entering search strings. Line-breaks are automatically removed from the input value. May include a delete icon in supporting browsers that can be used to clear the field. Displays a search icon instead of enter key on some devices with dynamic keypads.
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 - normalize.css */
+    outline-offset: -2px; /* 2 - normalize.css */
+}
+
+/**
+ * 1. Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; /* 1. - normalize.css */
+  }
+
 // <input type="submit"> A button that submits the form.
+// 1. Correct the inability to style clickable types in iOS and Safari.
 input[type="submit"]{
     cursor: pointer;
+    -webkit-appearance: button; /* 1. - normalize.css */
+}
+
+/**
+ * 1. Remove the inner border and padding in Firefox.
+ */
+ input[type="submit"]::-moz-focus-inner{
+    border-style: none; /* 1. normalize.css */
+    padding: 0; /* 1. normalize.css */
+}
+
+/**
+ * 1. Restore the focus styles unset by the previous rule.
+ */
+ input[type="submit"]:-moz-focusring{
+    outline: 1px dotted ButtonText; /* 1. - normalize.css */
 }
 
 // <input type="tel"> A control for entering a telephone number. Displays a telephone keypad in some devices with dynamic keypads.
@@ -98,10 +246,48 @@ input[type="radio"][id]:disabled + label[for] {
 /* stylelint-enable */
 
 // <legend> Defines a caption for a <fieldset> element.
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+ legend {
+    box-sizing: border-box; /* 1 - nomralize.css*/
+    color: inherit; /* 2 - nomralize.css*/
+    display: table; /* 1 - nomralize.css*/
+    max-width: 100%; /* 1 - nomralize.css*/
+    padding: 0; /* 3 - nomralize.css*/
+    white-space: normal; /* 1 - nomralize.css*/
+  }
+
 // <meter> Represents a scalar measurement within a known range.
 // <optgroup> Defines a group of related options in a selection list.
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+optgroup{
+    font-family: inherit; /* 1 - nomralize.css*/
+    font-size: 100%; /* 1 - nomralize.css*/
+    line-height: 1.15; /* 1 - nomralize.css*/
+    margin: 0; /* 2 - nomralize.css*/  
+}
 // <option> Defines an option in a selection list.
 // <select> Defines a selection list within a form.
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ * 3. Remove the inheritance of text transform in Firefox. 
+ */
+select{
+    font-family: inherit; /* 1 - nomralize.css*/
+    font-size: 100%; /* 1 - nomralize.css*/
+    line-height: 1.15; /* 1 - nomralize.css*/
+    margin: 0; /* 2 - nomralize.css*/  
+    text-transform: none; /* 3 - nomralize.css*/
+}
 
 // TODO This can happen when clicking round between multiple selects, the console, and the first option in the select https://d.pr/i/68au4V
 // custom <select> arrow and appearance with a base64 embedded SVG icon
@@ -177,5 +363,27 @@ select[multiple] option:checked
 }
 
 // <textarea> Defines a multi-line text input control (text area).
-// TODO
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ * 3. Remove the default vertical scrollbar in IE 10+.
+ */
+textarea{
+    font-family: inherit; /* 1 - nomralize.css*/
+    font-size: 100%; /* 1 - nomralize.css*/
+    line-height: 1.15; /* 1 - nomralize.css*/
+    margin: 0; /* 2 - nomralize.css*/  
+    overflow: auto; /* 3 - nomralize.css*/  
+}
 
+// Miscellaneous
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+ ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 - nomralize.css*/  
+    font: inherit; /* 2 - nomralize.css*/  
+  }
+  
