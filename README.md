@@ -171,6 +171,8 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * Would it be fun or annoying if page.scss become pages.css so that way it's always (pagescss)
 * We should add input[type="color"][list] support https://github.com/jensimmons/cssremedy/blob/master/process/UA_stylesheets/chrome.css
 * List of Chrome's default stylings https://github.com/jensimmons/cssremedy/blob/master/process/UA_stylesheets/chrome.css
+* Add all HTML Character Entities https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references - I would like them to all have their "Numeric" codes but those seem to be missing
+* Checkout the grouped structure of https://www.htmlhelp.com/reference/html40/olist.html and stricts vs non strict toggle (https://www.htmlhelp.com/reference/html40/alist.html)
 
 # Inspirartion and References
 * Normalize.css
