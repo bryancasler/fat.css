@@ -1,5 +1,5 @@
 .random-content::after {
-  content: "824";
+  content: "76";
 }
 
 body {
@@ -8,10 +8,12 @@ body {
   margin: 0 auto !important;
 }
 
+/* Style Section Headers */
 h1[id] {
   color: #0e3377;
 }
 
+/* Add a bottom border to section headers */
 h1[id]:after {
   content: "";
   z-index: -1;
@@ -22,15 +24,30 @@ h1[id]:after {
   background-color: #6494ed;
 }
 
+/* Remove underline from linked code examples */
+tr td:first-child a {
+  text-decoration: none;
+}
+
+/* Style code examples */
 tr td:first-child code:not([class]) {
   border: 1px dashed gray;
 }
 
-tr td:first-child mark {
-  margin-left: 0.5rem;
-  background-color: yellow;
-  padding: 0.2rem 0.25rem;
+tr.obsolete td:first-child code:not([class]) {
+  background-color: rgba(244, 67, 54, 0.3);
+  border-color: #a70a01;
+  color: #a70a01;
+}
+
+tr.obsolete td:last-child::before {
+  content: "Obsolete";
   vertical-align: middle;
+  margin-right: 0.75rem;
+  font-weight: bold;
+  color: #a70b01;
+  position: relative;
+  top: calc(-1.75 * 0.063rem);
 }
 
 pre code:not([class]) {
