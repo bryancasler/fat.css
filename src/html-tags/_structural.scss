@@ -187,6 +187,10 @@ main {
 // No styles needed.
 
 // <p> Defines a paragraph.
+// * > p:first-child{
+//     margin-top:0; //  We made this
+// }
+
 p:only-child{
     margin-top:0; //  We made this
     margin-bottom:0; //  We made this

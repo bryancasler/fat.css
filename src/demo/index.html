@@ -26,6 +26,14 @@
       });
     </script>
 
+    <!-- StickyBits for sticky headers -->
+    <script async src="https://cdn.jsdelivr.net/gh/yowainwright/stickybits@master/dist/stickybits.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(){
+        // stickybits('#right h1[id]', { stickyBitStickyOffset: -16 });
+        stickybits('#right h1[id]', { stickyBitStickyOffset: 0, useStickyClasses: true });
+      });
+    </script>
     <script>
       function hideObsolete(){
         for (let el of document.querySelectorAll('.obsolete')) el.style.display = 'none';
@@ -35,11 +43,11 @@
 
   <body>
     <div id="left" class="column">
-      <div class="top-left">
-        <h1>Page.SCSS</h1>
-        <p>Random number: <span class="random-content"></span></p>
-      </div>
+      <!-- <div class="top-left">
+        <h1 content="page-title">Page.SCSS</h1>
+      </div> -->
       <div class="bottom">
+        <h1 id="page-title">Page.SCSS</h1>
         <nav>
           <ul>
             <li><a href="#">Main root</a></li>
@@ -62,9 +70,10 @@
       <!-- <div class="top-right">right-top-right</div> -->
       <div class="bottom">
       
-      <h1 id="content">Page.SCSS</h1>
+      <!-- <h1 id="content">Page.SCSS</h1> -->
       <p>Page.SCSS provides default content styles that are easy to customize. You don’t need to apply any classes to achieve these styles — just use the appropriate tags.</p>
       <p>For easy spacing, Page.SCSS removes top margins and applies a bottom margin to block elements. By default, text sizing and spacing is measured in <code>rem</code> units. Page.SCSS also sets <code>box-sizing: border-box</code> globally to make it easier to properly size elements.</p>
+      <p>Random number: <span class="random-content"></span></p>
       <div>
         <button type="button" onclick="hideObsolete()">Hide Obsolete Tags</button>
       </div>
