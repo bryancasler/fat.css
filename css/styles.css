@@ -14,7 +14,7 @@ body {
 }
 
 .column {
-  height: 100%;
+  height: 100vh;
   /*allows both columns to span the full height of the browser window*/
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ body {
 }
 
 .random-content::after {
-  content: "590";
+  content: "717";
 }
 
 /* Style Section Headers */

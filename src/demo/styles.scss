@@ -14,7 +14,7 @@ body {
 }
 
 .column {
-    height: 100%;  /*allows both columns to span the full height of the browser window*/
+    height: 100vh;  /*allows both columns to span the full height of the browser window*/
     display: flex;
     flex-direction: column;  /*places the left and right headers above the bottom content*/
 }
