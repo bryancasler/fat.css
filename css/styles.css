@@ -28,8 +28,6 @@ body {
 
 .top-left {
   flex-shrink: 0;
-  background-color: blue;
-  color: white;
   padding: 1rem;
 }
 
@@ -50,7 +48,7 @@ body {
 }
 
 .random-content::after {
-  content: "578";
+  content: "206";
 }
 
 /* Style Section Headers */
