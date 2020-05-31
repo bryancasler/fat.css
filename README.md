@@ -176,6 +176,7 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * Should we mirror grouped structure of https://html.spec.whatwg.org/multipage/
 * Checkout the grouped structure of https://www.htmlhelp.com/reference/html40/olist.html and stricts vs non strict toggle (https://www.htmlhelp.com/reference/html40/alist.html)
 * Look into enterkeyhint https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode
+* Add a style for an <a> tag that's been visited, using the current page URL?
 
 
 # Inspirartion and References
