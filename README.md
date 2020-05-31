@@ -164,6 +164,7 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 <video> Embeds video content in an HTML document.
 
 # To Do's 
+* Mirror Firefox's documentation for grouping and language https://developer.mozilla.org/en-US/docs/Web/HTML/Element see https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses
 * Get the Responsive Font Sizes mixin installed and use that (https://github.com/twbs/rfs).
 * Look into: https://www.gridlover.net/try
 * Look into: https://type-scale.com/
@@ -172,7 +173,10 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * We should add input[type="color"][list] support https://github.com/jensimmons/cssremedy/blob/master/process/UA_stylesheets/chrome.css
 * List of Chrome's default stylings https://github.com/jensimmons/cssremedy/blob/master/process/UA_stylesheets/chrome.css
 * Add all HTML Character Entities https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references - I would like them to all have their "Numeric" codes but those seem to be missing
+* Should we mirror grouped structure of https://html.spec.whatwg.org/multipage/
 * Checkout the grouped structure of https://www.htmlhelp.com/reference/html40/olist.html and stricts vs non strict toggle (https://www.htmlhelp.com/reference/html40/alist.html)
+* Look into enterkeyhint https://html.spec.whatwg.org/multipage/interaction.html#attr-inputmode
+
 
 # Inspirartion and References
 * Normalize.css
@@ -187,6 +191,7 @@ Mostly classless and a few classed styles for page theming with cross-browser co
 * http://wtfforms.com/
 * https://css.gg/
 * http://jkorpela.fi/www/testel.html
+* Format for Demo https://www.bitovi.com/blog/use-flexbox-to-create-a-sticky-header-and-sidebar-with-flexible-content
 
 # Potential Classed Extensions (not in here)
 * Animations - Consists of animations that will work with the controls.

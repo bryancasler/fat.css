@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
-    <meta name="viewport" content="width=800, user-scalable=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=800, user-scalable=1" /> -->
     <link rel="shortcut icon"type="image/x-icon" href="data:image/x-icon;,">
     <title>Page.SCSS HTML Example</title>
 
@@ -34,7 +34,33 @@
   </head>
 
   <body>
-      <p>Value changes when SCSS is saved: <span class="random-content"></span></p>
+    <div id="left" class="column">
+      <div class="top-left">
+        <h1>Page.SCSS</h1>
+        <p>Value changes when SCSS is saved: <span class="random-content"></span></p>
+      </div>
+      <div class="bottom">
+        <nav>
+          <ul>
+            <li><a href="#">Main root</a></li>
+            <li><a href="#">Section root</a></li>
+            <li><a href="#">Content sectioning</a></li>
+            <li><a href="#">Text content</a></li>
+            <li><a href="#">Inline text semantics</a></li>
+            <li><a href="#">Image and multimedia</a></li>
+            <li><a href="#">Embedded content</a></li>
+            <li><a href="#">Demarcating edits</a></li>
+            <li><a href="#">Table content</a></li>
+            <li><a href="#">Forms</a></li>
+            <li><a href="#">Interactive Elements</a></li>
+            <li><a href="#">Obsolete and deprecated elements</a></li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+  <div id="right" class="column">
+      <!-- <div class="top-right">right-top-right</div> -->
+      <div class="bottom">
       
       <h1 id="content">Page.SCSS</h1>
       <p>Page.SCSS provides default content styles that are easy to customize. You don’t need to apply any classes to achieve these styles — just use the appropriate tags.</p>
@@ -56,8 +82,8 @@
             <td><a href="#">This is a hyperlink</a></td>
           </tr>          
           <tr>
-            <td><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element" target="_blank" data-tippy-content="Defines a hyperlink."><code>&lt;a&gt;</code></a></td>
-            <td><a href="#">This is a hyperlink</a></td>
+            <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" data-tippy-content="With its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address."><code>&lt;a&gt;</code></a></td>
+            <td><a href="javascript:void(0)">This is a hyperlink</a></td>
           </tr>
           <tr class="no-style">
             <td><code>&lt;article&gt;</code><div data-tippy-content="An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.">?</div></td>
@@ -702,7 +728,33 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
         </tr> 
         <tr>
           <td><code>&lt;area&gt;</code></td>
-          <td>TBD</td>
+          <td>
+            <map name="infographic">
+              <area shape="rect" coords="184,6,253,27"
+                    href="https://mozilla.org"
+                    target="_blank" alt="Mozilla" />
+              <area shape="circle" coords="130,136,60"
+                    href="https://developer.mozilla.org/"
+                    target="_blank" alt="MDN" />
+              <area shape="poly" coords="130,6,253,96,223,106,130,39"
+                    href="https://developer.mozilla.org/docs/Web/Guide/Graphics"
+                    target="_blank" alt="Graphics" />
+              <area shape="poly" coords="253,96,207,241,189,217,223,103"
+                    href="https://developer.mozilla.org/docs/Web/HTML"
+                    target="_blank" alt="HTML" />
+              <area shape="poly" coords="207,241,54,241,72,217,189,217"
+                    href="https://developer.mozilla.org/docs/Web/JavaScript"
+                    target="_blank" alt="JavaScript" />
+              <area shape="poly" coords="54,241,6,97,36,107,72,217"
+                    href="https://developer.mozilla.org/docs/Web/API"
+                    target="_blank" alt="Web APIs" />
+              <area shape="poly" coords="6,97,130,6,130,39,36,107"
+                    href="https://developer.mozilla.org/docs/Web/CSS"
+                    target="_blank" alt="CSS" />
+          </map>
+          <img usemap="#infographic" src="https://interactive-examples.mdn.mozilla.net/media/examples/mdn-info.png" alt="MDN infographic" style="display: block; margin: 0 auto; width: 260px; height: 248px;"/>
+          
+          </td>
         </tr> 
         <tr>
           <td><code>&lt;audio&gt;</code></td>
@@ -1217,6 +1269,8 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
       <span class="token property">--state-primary</span><span class="token punctuation">:</span> tomato<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     </code></pre>
+  </div>
+</div>
 
   </body>
 </html>
