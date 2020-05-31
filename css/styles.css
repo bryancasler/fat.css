@@ -22,6 +22,7 @@ body {
 }
 
 #left {
+  border-right: 0.5rem solid #6494ed;
   flex-shrink: 0;
   /*makes sure that content is not cut off in a smaller browser window*/
 }
@@ -47,13 +48,20 @@ body {
   padding: 1rem;
 }
 
+#right .bottom.js-stickybit-parent {
+  padding-top: 0;
+}
+
 .random-content::after {
-  content: "206";
+  content: "590";
 }
 
 /* Style Section Headers */
 h1[id] {
   color: #0e3377;
+  background-color: #ffffff;
+  z-index: 1;
+  padding-top: 1rem;
 }
 
 /* Add a bottom border to section headers */
@@ -65,6 +73,10 @@ h1[id]:after {
   width: 100%;
   display: block;
   background-color: #6494ed;
+}
+
+#left h1[id] {
+  padding-top: 0;
 }
 
 /* Remove underline from linked code examples */
