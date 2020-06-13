@@ -34,6 +34,22 @@
         stickybits('#right h1[id]', { stickyBitStickyOffset: 0, useStickyClasses: true });
       });
     </script>
+
+   <!-- Nav Scroll -->
+   <!-- <script async src="https://cdn.jsdelivr.net/gh/nash403/navscroll-js@master/dist/navscroll.js"></script>
+   <script>
+      NavScroll.setDefaults({
+        container: '#right',
+        duration: 500,
+        easing: 'ease',
+        offset: 0,
+        cancelable: true,
+        onDone: false,
+        onCancel: false,
+        scrollX: false,
+        scrollY: true
+    })
+    </script> -->
   </head>
 
   <body>
@@ -44,19 +60,15 @@
       <div class="bottom">
         <h1 id="page-title">Page.SCSS</h1>
         <nav>
-          <ul>
-            <li><a href="#">Main root</a></li>
-            <li><a href="#">Section root</a></li>
-            <li><a href="#">Content sectioning</a></li>
-            <li><a href="#">Text content</a></li>
-            <li><a href="#">Inline text semantics</a></li>
-            <li><a href="#">Image and multimedia</a></li>
-            <li><a href="#">Embedded content</a></li>
-            <li><a href="#">Demarcating edits</a></li>
-            <li><a href="#">Table content</a></li>
-            <li><a href="#forms">Forms</a></li>
-            <li><a href="#">Interactive Elements</a></li>
-            <li><a href="#">Obsolete and deprecated elements</a></li>
+          <ul id="wrapper" class="nav-scroll-items entries">
+            <li><a href="#structural-tags" class="entry item">Structural Tags</a></li>
+            <li><a href="#form-tags" class="entry item">Form Tags</a></li>
+            <li><a href="#text-formats" class="entry item">Text Formats</a></li>
+            <li><a href="#list-tags" class="entry item">List Tags</a></li>
+            <li><a href="#table-tags" class="entry item">Table Tags</a></li>
+            <li><a href="#embedded-tags" class="entry item">Embedded Tags</a></li>
+            <li><a href="#character-tests" class="entry item">Character Tests</a></li>
+            <li><a href="#html5-test-page" class="entry item">HTML5 Test Page</a></li>
           </ul>
         </nav>
       </div>
@@ -69,7 +81,7 @@
       <p>Page.SCSS provides default content styles that are easy to customize. You don’t need to apply any classes to achieve these styles — just use the appropriate tags.</p>
       <p>For easy spacing, Page.SCSS removes top margins and applies a bottom margin to block elements. By default, text sizing and spacing is measured in <code>rem</code> units. Page.SCSS also sets <code>box-sizing: border-box</code> globally to make it easier to properly size elements.</p>
       
-      <h1 id="Structural Tags">Structural Tags</h1>
+      <h1 id="structural-tags">Structural Tags</h1>
       <table class="table">
         <thead>
           <tr>
@@ -191,7 +203,7 @@
         </tbody>
       </table>
 
-      <h1 id="forms">Form Tags</h1>
+      <h1 id="form-tags">Form Tags</h1>
       <p>Form controls are styled at 100% of the width of their parent element.</p>
       <table class="table table-bordered">
         <thead>
@@ -254,8 +266,8 @@
               <td><code>&lt;input type="date"&gt;</code></td>
               <td><input type="date"></td>
             </tr>
-            <tr>
-              <td><code>&lt;input type="datetime"&gt;</code> <mark>Obsolete</mark></td>
+            <tr class="obsolete">
+              <td><code>&lt;input type="datetime"&gt;</code></td>
               <td><input type="datetime"></td>
             </tr>       
             <tr>
@@ -343,8 +355,8 @@
               <td><code>&lt;input type="week"&gt;</code></td>
               <td><input type="week"></td>
             </tr>  
-            <tr>
-              <td><code>&lt;keygen&gt;</code> <mark>Obsolete</mark></td>
+            <tr class="obsolete">
+              <td><code>&lt;keygen&gt;</code></td>
               <td>n/a</td>
             </tr>  
             <tr>
@@ -484,8 +496,8 @@
           <td><code>&lt;em&gt;</code></td>
           <td><em>This is emphasized text</em></td>
         </tr> 
-        <tr>
-          <td><code>&lt;font&gt;</code> <mark>Obsolete</mark></td>
+        <tr class="obsolete">
+          <td><code>&lt;font&gt;</code></td>
           <td>n/a</td>
         </tr>  
         <tr>
@@ -535,7 +547,7 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
           <td>TBD</td>
         </tr>
         <tr class="obsolete">
-          <td><code>&lt;s&gt;</code> <mark>Obsolete</mark></td>
+          <td><code>&lt;s&gt;</code></td>
           <td><s>This is strikethrough text</s></td>
         </tr>
         <tr>
@@ -546,8 +558,8 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
           <td><code>&lt;small&gt;</code></td>
           <td><small>This is small text</small></td>
         </tr>
-        <tr>
-          <td><code>&lt;strike&gt;</code> <mark>Obsolete</mark></td>
+        <tr class="obsolete">
+          <td><code>&lt;strike&gt;</code></td>
           <td>TBD</td>
         </tr>
         <tr>
@@ -566,8 +578,8 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
           <td><code>&lt;tt&gt;</code></td>
           <td>TBD</td>
         </tr>
-        <tr>
-          <td><code>&lt;u&gt;</code> <mark>Obsolete</mark></td>
+        <tr class="obsolete">
+          <td><code>&lt;u&gt;</code></td>
           <td><u>This is underlined text</u></td>
         </tr>      
         <tr>
@@ -595,8 +607,8 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
           <td><code>&lt;dd&gt;</code></td>
           <td>See <code>&lt;dl&gt;</code></td>
         </tr> 
-        <tr>
-          <td><code>&lt;dir&gt;</code> <mark>Obsolete</mark></td>
+        <tr class="obsolete">
+          <td><code>&lt;dir&gt;</code></td>
           <td>TBD</td>
         </tr>        
         <tr>
@@ -714,7 +726,7 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
       </tbody>
     </table>      
 
-    <h1 id="list-tags">Embedded Tags</h1>
+    <h1 id="embedded-tags">Embedded Tags</h1>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -824,7 +836,7 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
       </tbody>
     </table>  
 
-    <h1 id="character-test">Character Test</h1>
+    <h1 id="character-tests">Character Tests</h1>
     <p>The following table has some sample characters with
       annotations. If the browser’s default font does not
       contain all of them, they may get displayed using backup fonts.
@@ -845,54 +857,11 @@ H   H EEEEE LLLLL LLLLL  OOO</code></pre>
       </td></tr><tr><td>&#8230; </td><td>horizontal ellipsis </td><td>used to indicate an omission or a pause (instead of ...)
       </td></tr></tbody></table>
 
+      <h1 id="html5-test-page">HTML5 Test Page</h1>
           <div id="top" class="page" role="document">
             <header role="banner">
-              <h1>HTML5 Test Page</h1>
               <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
             </header>
-            <nav role="navigation">
-              <ul>
-                <li>
-                  <a href="#text">Text</a>
-                  <ul>
-                    <li><a href="#text__headings">Headings</a></li>
-                    <li><a href="#text__paragraphs">Paragraphs</a></li>
-                    <li><a href="#text__blockquotes">Blockquotes</a></li>
-                    <li><a href="#text__lists">Lists</a></li>
-                    <li><a href="#text__hr">Horizontal rules</a></li>
-                    <li><a href="#text__tables">Tabular data</a></li>
-                    <li><a href="#text__code">Code</a></li>
-                    <li><a href="#text__inline">Inline elements</a></li>
-                    <li><a href="#text__comments">HTML Comments</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#embedded">Embedded content</a>
-                  <ul>
-                    <li><a href="#embedded__images">Images</a></li>
-                    <li><a href="#embedded__audio">Audio</a></li>
-                    <li><a href="#embedded__video">Video</a></li>
-                    <li><a href="#embedded__canvas">Canvas</a></li>
-                    <li><a href="#embedded__meter">Meter</a></li>
-                    <li><a href="#embedded__progress">Progress</a></li>
-                    <li><a href="#embedded__svg">Inline SVG</a></li>
-                    <li><a href="#embedded__iframe">IFrames</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#forms">Form elements</a>
-                  <ul>
-                    <li><a href="#forms__input">Input fields</a></li>
-                    <li><a href="#forms__select">Select menus</a></li>
-                    <li><a href="#forms__checkbox">Checkboxes</a></li>
-                    <li><a href="#forms__radio">Radio buttons</a></li>
-                    <li><a href="#forms__textareas">Textareas</a></li>
-                    <li><a href="#forms__html5">HTML5 inputs</a></li>
-                    <li><a href="#forms__action">Action buttons</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
             <main role="main">
               <section id="text">
                 <header><h1>Text</h1></header>
