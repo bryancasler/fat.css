@@ -1,6 +1,6 @@
 
 # FAT.css
-A (mostly) classless CSS framework that isn't worried about being the smallest it can be.
+A (mostly) classless CSS framework that styles every HTML tag and isn't worried about being the smallest it can be.
 
 ## Differentiators
  * HTML Tags are Cross-Browser Normalized thanks to Normalize.css and Sanitize.css.
