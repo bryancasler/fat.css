@@ -1,4 +1,5 @@
 
+
 # FAT.css
 A (mostly) classless CSS framework that styles every HTML tag and isn't worried about being the smallest it can be.
 
@@ -143,12 +144,12 @@ Medium's utility classes are low-level structural and positional traits. Utiliti
 
 Utilities exist because certain CSS properties and patterns are used frequently. For example: floats, containing floats, vertical alignment, text truncation. Relying on utilities can help to reduce repetition and provide consistent implementations. They also act as a philosophical alternative to functional (i.e. non-polyfill) mixins.
 
-<div class\="u-clearfix"\>
-  <p class\="u-textTruncate"\>{$text}</p\>
-  <img class\="u-pullLeft" src\="{$src}" alt\=""\>
-  <img class\="u-pullLeft" src\="{$src}" alt\=""\>
-  <img class\="u-pullLeft" src\="{$src}" alt\=""\>
-</div\>
+    <div class\="u-clearfix"\>
+      <p class\="u-textTruncate"\>{$text}</p\>
+      <img class\="u-pullLeft" src\="{$src}" alt\=""\>
+      <img class\="u-pullLeft" src\="{$src}" alt\=""\>
+      <img class\="u-pullLeft" src\="{$src}" alt\=""\>
+    </div\>
 
 ### [](#u-utilityname)u-utilityName
 
@@ -156,14 +157,14 @@ Syntax: `u-<utilityName>`
 
 Utilities must use a camel case name, prefixed with a `u` namespace. What follows is an example of how various utilities can be used to create a simple structure within a component.
 
-<div class\="u-clearfix"\>
-  <a class\="u-pullLeft" href\="{$url}"\>
-    <img class\="u-block" src\="{$src}" alt\=""\>
-  </a\>
-  <p class\="u-sizeFill u-textBreak"\>
-    …
-  </p\>
-</div\>
+    <div class\="u-clearfix"\>
+      <a class\="u-pullLeft" href\="{$url}"\>
+        <img class\="u-block" src\="{$src}" alt\=""\>
+      </a\>
+      <p class\="u-sizeFill u-textBreak"\>
+        …
+      </p\>
+    </div\>
 
 [](#components)Components
 -------------------------
@@ -417,3 +418,5 @@ If we want to only style specific `a` elements inside `.user-list` we can give t
     .user-list \> .link-primary:hover {
       color: red;
     }
+
+
