@@ -3,14 +3,14 @@
 # FAT.css
 A (mostly) classless CSS framework that styles every HTML tag and isn't worried about being the smallest it can be.
 
-## Differentiators
+## Differentiators (soon)
  * HTML Tags are Cross-Browser Normalized thanks to Normalize.css and Sanitize.css.
  * HTML Tags are individually styled and with no groupings of similar HTML tags that makes it perfect for [purge.css](https://purgecss.com)
  * Every unit value is REM based.
  * Includes a style testing page that has every HTML element.
  * Intentionally no IE11 Support, There's no going back now.
  
-## Notables
+## Notables (needs review)
  * Most of the normalizations from normalize.css
  * Most of the opinionated normalizations from sanitize.css (Form, Typography ...)
  * Resets the box model to `border-box`.
@@ -26,7 +26,7 @@ A (mostly) classless CSS framework that styles every HTML tag and isn't worried 
  * Styles optimized for printing.
  
 # Inspirations
-*  [normalize.css](https://github.com/necolas/normalize.css)
+* [normalize.css](https://github.com/necolas/normalize.css)
 * [sanitize.css](https://github.com/csstools/sanitize.css)
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [ress](https://github.com/filipelinhares/ress)
