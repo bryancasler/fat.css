@@ -42,7 +42,7 @@ A (mostly) classless CSS framework that styles every HTML tag and isn't worried 
 * https://css.gg/
 * http://jkorpela.fi/www/testel.html
 * Format for Demo https://www.bitovi.com/blog/use-flexbox-to-create-a-sticky-header-and-sidebar-with-flexible-content
-
+* https://medium.com/@fat/mediums-css-is-actually-pretty-fucking-good-b8e2a6c78b06
 
 # Project To Do's
 ## Notes
