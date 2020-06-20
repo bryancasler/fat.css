@@ -5,7 +5,7 @@ A (mostly) classless CSS framework that styles every HTML tag and isn't worried 
 
 ## Differentiators
  * HTML Tags are Cross-Browser Normalized thanks to Normalize.css and Sanitize.css.
- * HTML Tags are individually styled. No groupings of similar HTML tags.
+ * HTML Tags are individually styled and with no groupings of similar HTML tags that makes it perfect for [purge.css](https://purgecss.com)
  * Every unit value is REM based.
  * Includes a style testing page that has every HTML element.
  * Intentionally no IE11 Support, There's no going back now.
