@@ -95,7 +95,7 @@ A (mostly) classless CSS framework that styles every HTML tag and isn't worried 
 Misc
 * Theme builder https://hiq-theme-builder.netlify.app/theme/colors (REF)
 ------------
-[](#less-coding-guidelines)LESS Coding Guidelines
+[](#coding-guidelines)Coding Guidelines
 =================================================
 
 Medium uses a strict subset of [LESS](http://lesscss.org/) for style generation. This subset includes variables and mixins, but nothing else (no nesting, etc.).
